@@ -1,0 +1,86 @@
+.clc {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__title {
+        margin-bottom: 90px;
+    }
+
+    &__body {
+        margin-bottom: 50px;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #F1F0FB;
+        border-radius: 20px;
+        padding: 35px 50px;
+        filter: drop-shadow(0px 4px 16px rgba(89, 85, 96, 0.12));
+
+        &_values {
+
+            .total {
+                font-size: 36px;
+                line-height: 43px;
+                font-weight: 700;
+                margin-bottom: 50px;
+
+                span {
+                    color: var(--purp);
+                }
+            }
+
+            .ex {
+
+                &__item {
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    line-height: 29px;
+
+                    span {
+                        font-weight: 700;
+                        color: var(--purp);
+                    }
+                    &:last-child {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        &_form {
+            max-width: 418px;
+            width: 100%;
+
+            input {
+                display: block;
+                width: 100%;
+                margin-bottom: 40px;
+                background-color: var(--bg);
+                border-radius: 5px;
+                padding: 16px 24px;
+                font-size: 18px;
+                line-height: 28px;
+                cursor: pointer;
+
+                &::placeholder {
+                    color: #A0A3BD;
+                }
+            }
+
+            .button {
+                width: 100%;
+                padding: 16px;
+                
+                .text {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}

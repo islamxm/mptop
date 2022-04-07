@@ -1,0 +1,10 @@
+:root {
+    --text: #373F41;
+    --purp: #6E54A6;
+    --bg: #F9F9F9;
+    --purp_hover: #8367BE;
+}
+
+@mixin def-anim {
+    transition: all .3s ease;
+}

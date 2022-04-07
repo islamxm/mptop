@@ -1,0 +1,48 @@
+.faq {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__title {
+        margin-bottom: 100px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+
+        &_item {
+            width: 48%;
+            margin-bottom: 70px;
+
+            .head   {
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 15px;
+
+                &__title {
+                    padding-bottom: 10px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    letter-spacing: 0.2px;
+                    line-height: 29px;
+                }
+
+                &__num {
+                    font-size: 96px;
+                    line-height: 100px;
+                    color: var(--purp);
+                    margin-right: 10px;
+                }
+            }
+
+            .text {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+}

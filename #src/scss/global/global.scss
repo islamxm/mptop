@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--text);
+    background-color: var(--bg);
+    overflow-x: hidden;
+    font-family: SFProDisplay;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+}

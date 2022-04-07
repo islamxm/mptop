@@ -1,0 +1,83 @@
+.vid {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        &_descr {
+            font-size: 40px;
+            line-height: 48px;
+            color: var(--purp);
+            letter-spacing: 1px;
+            width: 35%;
+            span {
+                font-weight: 700;
+            }
+        }
+
+        &_video {
+            width: 48%;
+        }
+    }
+
+    &__ex {
+
+        &_line {
+            height: 3px;
+            background: linear-gradient(90deg, #6E54A6 50%, rgba(110, 84, 166, 0) 96.81%);
+        }
+
+        &_list {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &_item {
+                padding-top: 55px;
+                width: calc(100% / 3.5);
+                position: relative;
+
+                .circle {
+                    width: 68px;
+                    height: 68px;
+                    background: radial-gradient(50% 50% at 50% 50%, rgba(110, 84, 166, 0.72) 0%, rgba(110, 84, 166, 0) 100%);
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -34px;
+                    left: -25px;
+
+                    &__in {
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 100%;
+                        background: var(--purp);
+                    }
+                }
+
+
+                .head {
+                    font-size: 30px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+
+                .descr {
+                    font-size: 18px;
+                    line-height: 22px;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+    }
+}

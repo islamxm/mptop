@@ -1,0 +1,92 @@
+.header {
+
+    &__in {
+        display: flex;
+        padding: 45px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;  
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                .icon {
+                    svg {
+                        path {
+                            fill: var(--purp);
+                        }
+                    }
+                }
+            }
+
+            .icon {
+                margin-right: 5px;
+                svg {
+                    path {
+                        @include def-anim;
+                    }
+                }
+            }
+
+            .text {
+
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        &_item {
+            padding: 0 30px;
+            a {
+                display: block;
+                @include def-anim;
+
+                &:hover {
+                    color: var(--purp_hover);
+                }
+            }
+        }
+    }
+
+    &__btn {
+
+        .button {
+
+        }
+    }
+}

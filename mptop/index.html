@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="container">
+        <div class="header__in">
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <div class="header__contacts">
+                    <a href="tel:+79267174359" class="header__contacts_item">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="10" fill="#FAFAFA"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20ZM10.4324 7.50461C9.53678 7.87713 7.7468 8.64816 5.06245 9.81768C4.62655 9.99103 4.39821 10.1606 4.37742 10.3264C4.34229 10.6066 4.69322 10.717 5.17109 10.8673C5.23609 10.8877 5.30344 10.9089 5.37249 10.9313C5.84264 11.0841 6.47507 11.2629 6.80385 11.27C7.10208 11.2765 7.43494 11.1535 7.80243 10.9012C10.3105 9.20817 11.6052 8.35243 11.6865 8.33399C11.7438 8.32097 11.8233 8.30461 11.8771 8.35246C11.931 8.40032 11.9257 8.49094 11.92 8.51526C11.8852 8.66346 10.5077 9.94412 9.79482 10.6069C9.57259 10.8135 9.41495 10.96 9.38272 10.9935C9.31054 11.0685 9.23697 11.1394 9.16626 11.2076C8.72948 11.6286 8.40193 11.9444 9.18439 12.46C9.56041 12.7078 9.8613 12.9127 10.1615 13.1171C10.4893 13.3404 10.8163 13.563 11.2393 13.8404C11.3471 13.911 11.4501 13.9844 11.5503 14.0559C11.9318 14.3279 12.2746 14.5722 12.698 14.5332C12.9441 14.5106 13.1982 14.2792 13.3273 13.5892C13.6324 11.9584 14.232 8.42506 14.3706 6.96904C14.3827 6.84147 14.3674 6.67821 14.3552 6.60655C14.3429 6.53488 14.3173 6.43277 14.2241 6.35718C14.1138 6.26766 13.9435 6.24878 13.8673 6.25006C13.521 6.25623 12.9896 6.44099 10.4324 7.50461Z" fill="#9696B8"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="text">+7-926-717-43-59</div>
+                    </a>
+                    <a href="tel:++7-4951091996" class="header__contacts_item">
+                        <div class="icon">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10" cy="10" r="10" fill="#FAFAFA"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.875 13.5625C8.5 13.9375 9.25 14.125 10 14.125C12.3125 14.125 14.125 12.25 14.125 10.0625C14.125 8.9375 13.75 7.9375 12.9375 7.125C12.125 6.375 11.125 5.9375 10 5.9375C7.75 5.9375 5.875 7.8125 5.875 10.0625C5.875 10.8125 6.0625 11.5625 6.5 12.25L6.625 12.4375L6.1875 13.9375L7.75 13.5L7.875 13.5625ZM11.375 10.625C11.5 10.625 12.125 10.9375 12.25 11C12.2695 11.0097 12.2889 11.0179 12.3082 11.0261C12.4124 11.0701 12.5097 11.1112 12.5625 11.375C12.625 11.375 12.625 11.625 12.5 11.9375C12.4375 12.1875 11.9375 12.5 11.6875 12.5C11.6452 12.5 11.6046 12.5036 11.5613 12.5074C11.3489 12.5262 11.07 12.5509 10.1875 12.1875C9.0922 11.7494 8.33282 10.6874 8.11958 10.3892C8.08946 10.3471 8.07023 10.3202 8.0625 10.3125C8.05185 10.2912 8.03034 10.2573 8.00197 10.2125C7.8637 9.99414 7.5625 9.51859 7.5625 9C7.5625 8.375 7.87499 8.0625 7.99999 7.9375C8.12499 7.8125 8.24999 7.8125 8.31249 7.8125H8.56251C8.62501 7.8125 8.75 7.8125 8.8125 8C8.9375 8.25 9.18751 8.875 9.18751 8.9375C9.18751 8.95833 9.19445 8.97917 9.20139 9C9.21528 9.04167 9.22917 9.08333 9.18751 9.125C9.15626 9.15625 9.14063 9.1875 9.125 9.21875C9.10938 9.25 9.09375 9.28125 9.0625 9.3125L8.87501 9.5C8.81251 9.5625 8.75 9.625 8.8125 9.75C8.875 9.875 9.12501 10.3125 9.50001 10.625C9.92195 10.9942 10.2549 11.1409 10.4237 11.2152C10.4549 11.229 10.4805 11.2402 10.5 11.25C10.625 11.25 10.6875 11.25 10.75 11.1875C10.7813 11.125 10.8594 11.0313 10.9375 10.9375C11.0156 10.8437 11.0937 10.75 11.125 10.6875C11.1875 10.5625 11.25 10.5625 11.375 10.625Z" fill="#9696B8"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM10 5C11.3125 5 12.5625 5.5 13.5 6.4375C14.4375 7.375 15 8.625 15 9.9375C15 12.6875 12.75 14.9375 10 14.9375C9.1875 14.9375 8.37501 14.6875 7.62501 14.3125L5 15L5.6875 12.5C5.25001 11.75 5 10.875 5 10C5 7.25 7.25 5 10 5Z" fill="#9696B8"/>
+                                </svg>
+                                
+                        </div>
+                        <div class="text">+7-495-109-19-96</div>
+                    </a>
+                </div>
+            </div>
+            <div class="header__right">
+                <ul class="header__nav">
+                    <li class="header__nav_item"><a href="#">Быстрый страт</a></li>
+                    <li class="header__nav_item"><a href="#">Тарифы</a></li>
+                    <li class="header__nav_item"><a href="#">Вопрос-Ответ</a></li>
+                </ul>
+                <div class="header__btn">
+                    <button class="button">
+                        <div class="text">Войти</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__in">
+                        <div class="hero__body">
+                            <h1 class="hero__body_title">
+                                Выкупы и отзывы на маркетплейсах
+                            </h1>
+                            <div class="hero__body_text">
+                                Высокая скорость выкупов, бесплатные консультации, 
+                                большое количество аккаунтов
+                            </div>
+                            <div class="hero__body_btn">
+                                <a href="#" class="button">
+                                    <div class="text">Начать</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero__img">
+                            <picture>
+                                <source srcset="" type="image/webp">
+                                <img src="./img/hero/hero.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wrk">
+                <div class="container">
+                    <div class="wrk__in">
+                        <div class="wrk__item wrk__current">
+                            <h3 class="wrk__item_title">
+                                Маркетплейсы, с которыми 
+                                мы работаем
+                            </h3>
+                            <div class="wrk__item_list">
+                                <div class="wrk__item_list_t">
+                                    <div class="normal">
+                                        <img src="./img/ozon.svg" alt="">
+                                    </div>
+                                    <div class="hover">
+                                        <img src="./img/ozon-hover.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wrk__item_list_t">
+                                    <div class="normal">
+                                        <img src="./img/wb.svg" alt="">
+                                    </div>
+                                    <div class="hover">
+                                        <img src="./img/wb-hover.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrk__item wrk__soon">
+                            <h3 class="wrk__item_title">
+                                Скоро
+                            </h3>
+                            <div class="wrk__item_list">
+                                <div class="wrk__item_list_t soon">
+                                    <div class="normal">
+                                        <img src="./img/yam.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wrk__item_list_t soon">
+                                    <div class="normal">
+                                        <img src="./img/yam.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wrk__item_list_t soon">
+                                    <div class="normal">
+                                        <img src="./img/yam.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="prt">
+                <div class="container">
+                    <div class="prt__in">
+                        <div class="prt__col">
+                            <div class="prt__col_item  prt__col_item-first">
+                                <h2 class="prt__col_item_title">Запусти продвижение 
+                                    товара в <span>3 клика</span></h2>
+                                <div class="prt__col_item_descr">
+                                    <p>
+                                        Два режима создания выкупов: <span>простой и профессиональный.</span>
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        Интерактивная система сама распределит выкупы, а менеджер подскажет, как все сделать еще эффктивней.
+                                    </p>
+                                </div>
+                                <div class="prt__col_item_link">
+                                    <a href="#">
+                                        <div class="text">Запустить продвижение</div>
+                                        <div class="icon">
+                                            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM2 13.5H32V10.5H2V13.5Z" fill="#6E54A6"/>
+                                                </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="prt__col">
+                            <div class="prt__col_item prt__col_item-second">
+                                <h2 class="prt__col_item_title">Распределяй товары по разным пунктам выдачи</h2>
+                                <div class="prt__col_item_descr">
+                                    <p>
+                                        <span>Система подскажет,</span> сколько ПВЗ лучше выбрать, распределит по ним выкупы на период.
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <span>Три варианта</span> забора товара: Вы забираете сами, мы забираем и возвращаем Вам или на Маркетплейс от Вашего имени.
+                                    </p>
+                                </div>
+                                <div class="prt__col_item_link">
+                                    <a href="#">
+                                        <div class="text">Запустить продвижение</div>
+                                        <div class="icon">
+                                            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM2 13.5H32V10.5H2V13.5Z" fill="#6E54A6"/>
+                                                </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prt__col_item prt__col_item-third">
+                                <h2 class="prt__col_item_title">Продвижение <span>по ключевым словам,</span> от 1 до 3 фраз на товар</h2>
+                                <div class="prt__col_item_descr">
+                                    <p>
+                                        В простом режиме можно внести одну ключевую фразу, по которой будет продвигаться товар (в профессиональном режиме три фразы).
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p>
+                                        <span>Товар поднимается в топ</span> по поиску маркетплейса. И его покупают чаще ваши реальные покупатели.
+                                    </p>
+                                </div>
+                                <div class="prt__col_item_link">
+                                    <a href="#">
+                                        <div class="text">Запустить продвижение</div>
+                                        <div class="icon">
+                                            <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM33.0607 13.0607C33.6464 12.4749 33.6464 11.5251 33.0607 10.9393L23.5147 1.3934C22.9289 0.807611 21.9792 0.807611 21.3934 1.3934C20.8076 1.97919 20.8076 2.92893 21.3934 3.51472L29.8787 12L21.3934 20.4853C20.8076 21.0711 20.8076 22.0208 21.3934 22.6066C21.9792 23.1924 22.9289 23.1924 23.5147 22.6066L33.0607 13.0607ZM2 13.5H32V10.5H2V13.5Z" fill="#6E54A6"/>
+                                                </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="clc">
+                <div class="container">
+                    <div class="clc__in">
+                        <h2 class="clc__title section__title">Расчитать стоимость</h2>
+                        <div class="clc__body">
+                            <div class="clc__body_col">
+
+                            </div>
+                            <div class="clc__body_col">
+                                <div class="clc__body_col_item dropdown">
+                                    <div class="dropdown__head" data-path="one">Не выбрано</div>
+                                    <div class="dropdown__list" data-target="one">
+                                        <div class="dropdown__list_item">
+                                            <div class="link"></div>
+                                            <div class="content">
+                                                <div class="icon"><img src="./img/clc/ozon.png" alt=""></div>
+                                                <div class="text">Ozon</div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown__list_item">AliExpress</div>
+                                        <div class="dropdown__list_item">Wildberries</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clc__body_col"></div>
+                            <div class="clc__body_col"></div>
+                        </div>
+                        <div class="clc__action">
+                            <div class="clc__action_values">
+                                <div class="total">
+                                    Итого: <span>67 800 ₽</span>
+                                </div>
+                                <div class="ex">
+                                    <div class="ex__item">
+                                        Количество отзывов: <span>100</span>
+                                    </div>
+                                    <div class="ex__item">
+                                        Количество выкупов: <span>30</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <form class="clc__action_form">
+                                <input type="text" placeholder="+7">
+                                <button class="button">
+                                    <div class="text">Заказать</div>
+                                </button>
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <section class="brn">
+                <div class="container">
+                    <div class="ben__in">
+                        <h2 class="ben__title section__title">Наши приемущества</h2>
+                        <div class="ben__body">
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-1.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Надёжно</div>
+                                    <div class="descr__text">
+                                        Нас не банят, мы выкупаем с умом!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-2.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Отзывы</div>
+                                    <div class="descr__text">
+                                        25 отзывов в подарок
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-3.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Вопросы</div>
+                                    <div class="descr__text">
+                                        100 вопросов по вашему товару
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-4.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Добавления</div>
+                                    <div class="descr__text">
+                                        100 добавлений в избранное
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-5.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Рейтинг</div>
+                                    <div class="descr__text">
+                                        Поднимем рейтингг товара
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-6.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Отзывы</div>
+                                    <div class="descr__text">
+                                        Напишем отзывы за вас
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-7.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Консультация</div>
+                                    <div class="descr__text">
+                                        Консультация 30 минут включена
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-8.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Подарок</div>
+                                    <div class="descr__text">
+                                        Лайки на отзывы в подарок
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-9.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Фразы</div>
+                                    <div class="descr__text">
+                                        Мониторинг позиций по топовым фразам
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-10.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Безопасно</div>
+                                    <div class="descr__text">
+                                        Конфиденциально
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-11.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Удобно</div>
+                                    <div class="descr__text">
+                                        Можно оплатить QR-кодом
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ben__body_item">
+                                <div class="img">
+                                    <img src="./img/ben/ben-11.svg" alt="">
+                                </div>
+                                <div class="descr">
+                                    <div class="descr__name">Теги</div>
+                                    <div class="descr__text">
+                                        Выкуп по ключевой фразе
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="why">
+                <div class="container">
+                    <div class="why__in">
+                        <h2 class="why__title section__title">За что нас выбирают</h2>
+                        <div class="why__body">
+                            <div class="why__body_item">
+                                <div class="head">
+                                    Искусственный
+                                    интелект
+                                </div>
+                                <div class="sub">
+                                    Более 200-х алгоритмов 
+                                    поиска товара
+                                </div>
+                                <div class="text">
+                                    Система прямого анализа маркетплейса интерактивных подсказок для правильного продвижения. Разработали, улучшаем, развиваем.
+                                </div>
+                            </div>
+                            <div class="why__body_item">
+                                <div class="head">
+                                    Собственная база покупателей
+                                </div>
+                                <div class="sub">
+                                    Более 200-х алгоритмов 
+                                    поиска товара
+                                </div>
+                                <div class="text">
+                                    Развиваем собственную базу покупателей, постоянно улучшая качество профилей. 2 раза не купим товар одного бренда с одного аккаунта.
+                                </div>
+                            </div>
+                            <div class="why__body_item">
+                                <div class="head">
+                                    Защита данных и безопасность
+                                </div>
+                                <div class="sub">
+                                    Более 200-х алгоритмов 
+                                    поиска товара
+                                </div>
+                                <div class="text">
+                                    От регулярной смены ip адреса и до индивидуальных user-agent и cookies на каждый аккаунт с рассщиренной историей и постоянным улучшением качества.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="vid">
+                <div class="container">
+                    <div class="vid__in">
+                        <div class="vid__content">
+                            <div class="vid__content_descr">
+                                Всего <span>2 минуты</span>
+                                и все станет понятно
+                            </div>
+                            <div class="vid__content_video">
+
+                            </div>
+                        </div>
+                        <div class="vid__ex">
+                            <div class="vid__ex_line"></div>
+                            <div class="vid__ex_list">
+                                <div class="vid__ex_list_item">
+                                    <div class="circle">
+                                        <div class="circle__in"></div>
+                                    </div>
+                                    <div class="head">
+                                        Регистрация и создание плана выкупов
+                                    </div>
+                                    <div class="descr">
+                                        Запуск и продвижение 
+                                        в 3 клика
+                                    </div>
+                                </div>
+                                <div class="vid__ex_list_item">
+                                    <div class="circle">
+                                        <div class="circle__in"></div>
+                                    </div>
+                                    <div class="head">
+                                        Личный кабинет
+                                    </div>
+                                    <div class="descr">
+                                        Выкупы, отзывы, доставка
+                                    </div>
+                                </div>
+                                <div class="vid__ex_list_item">
+                                    <div class="circle">
+                                        <div class="circle__in"></div>
+                                    </div>
+                                    <div class="head">
+                                        Финансы и уведомления
+                                    </div>
+                                    <div class="descr">
+                                        История платежей и оказанных услуг
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rate">
+                <div class="container">
+                    <div class="rate__in">
+                        <h2 class="rate__title section__title">Тарифы</h2>
+                        <div class="rate__sub">Cрок действия пакетов услуг <span>1 год</span> с момента приобретения</div>
+
+                        <div class="rate__body">
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 1 выкуп
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 100 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 50 ₽</li>
+                                    <li class="info__item">0 отзывов в подарок</li>
+                                    <li class="info__item">1 добавление в избранное</li>
+                                    <li class="info__item">1 вопрос по товару</li>
+                                    <li class="info__item">Консультация 0 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 100 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 50 выкупов
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 60 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 45 ₽</li>
+                                    <li class="info__item">4 отзывов в подарок</li>
+                                    <li class="info__item">10 добавлений в избранное</li>
+                                    <li class="info__item">3 вопросов по товару</li>
+                                    <li class="info__item">Консультация 5 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 2999 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 100 выкупов
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 49 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 40 ₽</li>
+                                    <li class="info__item">10 отзывов в подарок</li>
+                                    <li class="info__item">30 добавлений в избранное</li>
+                                    <li class="info__item">10 вопросов по товару</li>
+                                    <li class="info__item">Консультация 10 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 4999 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 500 выкупов
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 36 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 30 ₽</li>
+                                    <li class="info__item">30 отзывов в подарок</li>
+                                    <li class="info__item">100 добавлений в избранное</li>
+                                    <li class="info__item">100 вопросов по товару</li>
+                                    <li class="info__item">Консультация 20 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 17 999 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 1000 выкупов
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 22 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 20 ₽</li>
+                                    <li class="info__item">150 отзывов в подарок</li>
+                                    <li class="info__item">500 добавлений в избранное</li>
+                                    <li class="info__item">500 вопросов по товару</li>
+                                    <li class="info__item">Консультация 30 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 29 999 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                            <div class="rate__body_item">
+                                <div class="head">
+                                    Пакет 5000 выкупов
+                                </div>
+                                <ul class="info">
+                                    <li class="info__item">1 выкуп сверх пакета - 22 ₽</li>
+                                    <li class="info__item">1 отзыв сверх пакета - 20 ₽</li>
+                                    <li class="info__item">150 отзывов в подарок</li>
+                                    <li class="info__item">500 добавлений в избранное</li>
+                                    <li class="info__item">500 вопросов по товару</li>
+                                    <li class="info__item">Консультация 30 минут</li>
+                                </ul>
+
+                                <div class="price">Цена: 109 999 ₽</div>
+                                <div class="btn">
+                                    <button class="button"><div class="text">Заказать</div></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faq">
+                <div class="container">
+                    <div class="faq__in">
+                        <h2 class="faq__title section__title">Частые вопросы</h2>
+                        <div class="faq__body">
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">01</div>
+                                    <div class="head__title">
+                                        У меня новый товар, безопасно 
+                                        ли его выкупать?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">02</div>
+                                    <div class="head__title">
+                                        Товар вышел в топ, а средства еще остались, что делать?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">03</div>
+                                    <div class="head__title">
+                                        Как происходит оплата?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">04</div>
+                                    <div class="head__title">
+                                        Какой у вас опыт?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">05</div>
+                                    <div class="head__title">
+                                        Какое количество товара нужно выкупить, чтобы он начал 
+                                        активно продаваться и попал в ТОП?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                            <div class="faq__body_item">
+                                <div class="head">
+                                    <div class="head__num">06</div>
+                                    <div class="head__title">
+                                        Как я пойму куда и сколько денег ушло?
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feed">
+                <div class="container">
+                    <div class="feed__in">
+                        <div class="feed__body">
+                            <div class="feed__body_main">
+                                <div class="feed__body_main_descr">
+                                    <div class="title">Остались вопросы?</div>
+                                    <div class="descr">
+                                        Получите бесплатную кнсультацию  по продвижению вашего товара
+                                    </div>
+                                </div>
+                                <div class="feed__body_main_form">
+                                    <input type="text" placeholder="Телефон">
+                                    <input type="text" placeholder="Email">
+                                    <button class="button"><div class="text">Заказать консультацию</div></button>
+                                </div>
+                            </div>
+                            <div class="feed__body_ex">
+                                <div class="feed__body_ex_checkbox">
+                                    <input type="checkbox" id="test">
+                                    <label for="test">
+                                        <div class="icon">
+                                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.3898 0L5.23729 7.93527L2.59323 5.36167L0 7.88578L2.64407 10.4594L5.25423 13L7.84747 10.4759L16 2.54062L13.3898 0Z" fill="#FAFAFA"/>
+                                                </svg>
+                                                
+                                        </div>
+                                        <div class="text">
+                                            Отправляя данные, вы соглашаетсь  с политикой <a href="#">конфиденциальности</a>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__in">
+            <div class="footer__main">
+                <div class="footer__main_part">
+                    <a href="#" class="footer__main_logo">
+                        <img src="./img/logo-footer.svg" alt="">
+                    </a>
+                    <div class="footer__main_text">
+                        Выкупы и отзывы на Wildberries, Ozon, Яндекс Маркет 
+                    </div>
+                    <div class="footer__main_text">
+                        Продвижение на Wildberries, Ozon, Яндекс Маркет
+                    </div>
+                </div>
+                <div class="footer__main_part">
+                    <div class="footer__main_head">
+                        О нас
+                    </div>
+                    <div class="footer__main_list">
+                        <div class="footer__main_list_item">ИП Губин А.Н.</div>
+                        <div class="footer__main_list_item">ИНН: 312345354048</div>
+                        <div class="footer__main_list_item">ОГРНИП: 319695200043462</div>
+                    </div>
+                </div>
+                <div class="footer__main_part">
+                    <div class="footer__main_head">
+                        Подписаться на уведомления
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <button class="button">
+                        <div class="text">Подписаться</div>
+                    </button>
+                    <a href="#" class="footer__main_link">Договор оферты</a>
+                </div>
+            </div>
+            <div class="footer__ex">
+                <div class="footer__ex_item">
+                    © 2020-2022 Mptop.pro. Все права защищены.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

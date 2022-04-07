@@ -1,0 +1,120 @@
+.footer {
+    background-color: var(--text);
+
+    &__in {
+        padding: 35px 0;
+        padding-bottom: 20px;
+    }
+
+    &__main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_part {
+            width: calc(100% / 3.6);
+        }
+
+        &_logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            letter-spacing: 0.75px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FCFCFC;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &_head {
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.75px;
+            color: #FCFCFC;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+
+        &_list {
+
+            &_item {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0.75px;
+
+                /* Off-white */
+
+                color: #FCFCFC;
+            }
+        }
+
+        &_link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: var(--bg);
+            text-decoration: underline;
+            margin-top: 24px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            border: 1px solid #F9F9F9;
+            box-sizing: border-box;
+            border-radius: 5px;
+            letter-spacing: 0.75px;
+            font-size: 18px;
+            line-height: 22px;
+            padding: 12px 20px;
+            margin-bottom: 17px;
+            color: var(--bg);
+        }
+
+        .button {
+            background-color: #fff;
+            @include def-anim;
+            width: 100%;
+            padding: 13px 20px;
+
+            .text {
+                color: var(--text);
+            }
+
+            &:hover {
+                background-color: var(--text);
+
+                .text {
+                    color: var(--bg);
+                }
+            }
+        }
+    }
+
+    &__ex {
+        padding: 40px 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_item {
+            letter-spacing: 0.25px;
+
+            /* Off-white */
+
+            color: #FCFCFC;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}

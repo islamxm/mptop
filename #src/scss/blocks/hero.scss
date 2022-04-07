@@ -1,0 +1,47 @@
+.hero {
+
+    &__in {
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__body {
+        width: 40%;
+
+        &_title {
+            margin-bottom: 30px;
+            font-size: 36px;
+            line-height: 43px;
+            text-transform: uppercase;
+        }
+
+        &_text {
+            font-size: 24px;
+            line-height: 29px;
+            color: #14142B;
+            margin-bottom: 30px;
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .button {
+                padding: 10px 110px;
+            }
+        }
+    }
+    
+    &__img {
+        width: 60%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
