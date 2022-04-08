@@ -81,3 +81,107 @@
         }
     }
 }
+
+
+@media(max-width: 1000px) {
+
+    .vid {
+        &__in {
+            padding: 40px 30px;
+        }
+        &__content {
+
+            &_descr {
+                font-size: 24px;
+                line-height: 29px;
+            }
+        }
+
+        &__ex {
+            
+            &_line {
+
+            }
+
+            &_list {
+
+                &_item {
+
+                    .head {
+                        font-size: 18px;
+                        line-height: 22px;
+                        margin-bottom: 12px;
+                    }
+
+                    .descr {
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .vid {
+
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__content {
+
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+
+            &_descr {
+                width: 100%;
+            }
+
+            &_video {
+                width: 100%;
+                
+            }
+        }
+
+        &__ex {
+            display: flex;
+            padding: 0 30px;
+
+            &_line {
+                height: 100% !important;
+                width: 2px;
+                display: none;
+            }
+
+            &_list {
+                position: relative;
+                flex-wrap: wrap;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 2px;
+                    height: 100%;
+                    background: linear-gradient(180deg, #6E54A6 50%, rgba(110, 84, 166, 0) 96.81%);
+                    content: '';
+                }
+
+                &_item {
+                    width: 100%;
+                    padding-top: 35px;
+                    padding-left: 30px;
+                    padding-bottom: 70px;
+
+                    .circle {
+                        left: -33px;
+                    }
+                }
+            }
+        }
+    }
+}

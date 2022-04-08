@@ -1,0 +1,123 @@
+.mobmenu.active {
+
+    z-index: 1000;
+    opacity: 1;
+
+    .mobmenu__body {
+        transform: translateX(0);
+    }
+}
+
+.mobmenu {
+    z-index: -1;
+    // opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(110, 84, 166, 0.6);
+    backdrop-filter: blur(9px);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    @include def-anim;
+
+    &__body {
+        background-color: var(--bg);
+        width: 340px;
+        padding-bottom: 40px;
+        transform: translateX(100%);
+        @include def-anim;
+        
+    }
+
+    &__head {
+        padding: 22px;
+        display: flex;
+        align-items: center;
+        &_close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 auto;
+        }
+    }
+
+    &__list {
+        margin-bottom: 25px;
+        &_item.active {
+            background-color: #F1F0FB;
+        }
+        &_item {
+            a {
+                display: block;
+                text-align: center;
+                padding: 10px 10px;
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid var(--purp);
+            margin-bottom: 20px;
+            max-width: 210px;
+            width: 100%;
+
+            .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30px;
+                flex: 0 0 auto;
+                height: 30px;
+                margin-right: 10px;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+
+                    path {
+                        fill: var(--purp);
+                    }
+                }
+            }   
+
+            .text {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .mobmenu {
+
+        &__body {
+            border-radius: 10px 0px 0px 10px;
+            width: 273px;
+            padding-bottom: 20px;
+        }
+    }
+} 

@@ -3,7 +3,10 @@
         <div class="header__in">
             <div class="header__left">
                 <a href="#" class="header__logo">
-                    <img src="./img/logo.svg" alt="">
+                    <picture>
+                        <source srcset="./img/icons/logo-header-mob.svg" media="(max-width:600px)">
+                        <img src="./img/logo.svg" alt="">
+                    </picture>
                 </a>
                 <div class="header__contacts">
                     <a href="tel:+79267174359" class="header__contacts_item">
@@ -36,9 +39,14 @@
                     <li class="header__nav_item"><a href="#">Вопрос-Ответ</a></li>
                 </ul>
                 <div class="header__btn">
-                    <button class="button">
+                    <button id="loginTrigger" class="button">
                         <div class="text">Войти</div>
                     </button>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>

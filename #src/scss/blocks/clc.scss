@@ -9,7 +9,103 @@
     }
 
     &__body {
-        margin-bottom: 50px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_col.clc__body_col--select_mp {
+            max-width: 230px;
+            width: 100%;
+        }
+
+        &_col.clc__body_col--select_num {
+            max-width: 190px;
+            width: 100%;
+        }
+
+        &_col.clc__body_col--inputs {
+            max-width: 174px;
+            width: 100%;
+
+            .clc-input {
+
+                &__in {
+                    // height: 56px;
+                    padding: 0 22px 0 10px;
+                    border: 1px solid #6E54A6;
+                    border-radius: 5px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+
+                    &:after {
+                        position: absolute;
+                        top: 14px;
+                        right: 22px;
+                        content: '₽';
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                    &_value {
+                        padding: 14px 14px;
+                        width: auto;
+                        display: block;
+                        width: 100%;
+                        font-size: 18px;
+                        line-height: 28px;
+
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        /* display: none; <- Crashes Chrome on hover */
+                        -webkit-appearance: none;
+                        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+                    }
+
+                    input[type=number] {
+                        -moz-appearance:textfield; /* Firefox */
+                    }
+                }
+            }
+        }
+        &_col {
+
+            &_head {
+                margin-bottom: 40px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 20px;
+                height: 40px;
+            }
+
+            &_list {
+
+            }
+
+            &_item {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__add {
+        padding: 20px 0;
+        margin-bottom: 30px;
+
+        button {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: var(--purp);
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                color: var(--purp_hover);
+            }
+        }
     }
 
     &__action {
@@ -79,6 +175,203 @@
                 .text {
                     font-size: 24px;
                     line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .clc {
+
+
+        &__in {
+
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__body {
+
+            &_col {
+                width: calc(100% / 4.3) !important;
+
+                &_head {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                }
+
+            }
+
+            &_col.clc__body_col--select_mp {
+                max-width: unset;
+            }
+            &_col.clc__body_col--select_num {
+                max-width: unset;
+            }
+            
+            &_col.clc__body_col--inputs {
+                max-width: unset;
+
+                .clc-input {
+
+                    &__in {
+                        padding: 0 10px 0 5px;
+
+                        &_value {
+                            padding: 7px 5px;
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+
+                        &:after {
+                            top: 7px;
+                            right: 7px;
+                            font-size: 14px;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__add {
+            margin-bottom: 0;
+        }
+
+        &__action {
+
+            &_values {
+                width: 47%;
+                .total {
+                    margin-bottom: 40px;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                .ex {
+
+                    &__item {
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                }
+            }
+
+            &_form {
+                width: 47%;
+
+                input {
+                    margin-bottom: 10px;
+                    padding: 9px 20px;
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                .button {
+                    padding: 9px;
+                    .text {
+                        
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .clc {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__body {
+            border: 1px solid #6E54A6;
+            border-radius: 5px;
+            padding: 20px 8px;
+            flex-wrap: wrap;
+
+
+            &_col.clc__body_col--select_mp {
+                width: calc(100% / 3.1) !important;
+            }
+
+            &_col.clc__body_col--select_num {
+                width: calc(100% / 3.1) !important;
+            }
+
+            &_col.clc__body_col--select_num {
+                width: calc(100% / 3.1) !important;
+            }
+
+            &_col.clc__body_col--inputs {
+                width: 100% !important;
+            }
+            &_col {
+                
+                &_head {
+                    height: 30px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    margin-bottom: 10px;
+                    font-weight: 400;
+                }
+
+                &_list {
+
+                }
+
+                &_item.mob-hide {
+                    display: none;
+                }
+            }
+        }
+
+        &__action {
+            padding: 30px 14px;
+
+            &_values {
+                width: 49%;
+                .total {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+
+                .ex {
+
+                    &__item {
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                        line-height: 14px;
+                    }
+                }
+            }
+
+            &_form {
+                width: 49%;
+
+                input {
+                    padding: 5px;
+                }
+
+                .button {
+                    padding: 5px;
                 }
             }
         }

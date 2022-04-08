@@ -46,3 +46,68 @@
         }
     }
 }
+
+@media(max-width: 1000px) {
+
+    .faq {
+
+        &__in {
+            padding-bottom: 70px;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__body {
+
+            &_item {
+                width: 100%;
+                margin-bottom: 20px;
+
+                .head {
+
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .faq {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__body {
+
+
+            &_item {
+
+                .head {
+                    margin-bottom: 12px;
+                    flex-wrap: wrap;
+
+                    &__title {
+                        width: 100%;
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding-bottom: 0;
+                    }
+                }
+
+                .text {
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+            }
+        }
+    }
+}

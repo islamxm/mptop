@@ -29,12 +29,7 @@ input, button, textarea, select {
     }
 }
 
-html {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    
-}
+
 
 
 
@@ -61,4 +56,21 @@ body {
     font-size: 36px;
     line-height: normal;
     text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+    .section__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .section__title {
+        font-size: 24px;
+        line-height: 26px;
+        text-align: left;
+    }
 }

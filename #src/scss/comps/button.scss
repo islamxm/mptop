@@ -22,3 +22,14 @@
         background-color: var(--purp_hover);
     }
 }
+
+@media (max-width: 1000px) {
+
+    .button {
+
+        .text {
+            font-size: 18px;
+            line-height: normal;
+        }
+    }
+}
